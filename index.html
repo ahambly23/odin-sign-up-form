@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form - Triassic Park</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="left">
-        <div>
+        <div class="logo-cont">
             <p class="welcome">Welcome to</p>
-            <h1>Triassic Park</h1>
+            <img src="assets/triassic-park-logo.png" class="logo">
         </div>
     </div>
     <div id="right">
-        <p>Get ready for the adventure of a lifetime as you step into a world where dinosaurs roam once again. Whether you're eager to meet a mighty T-Rex, ride alongside towering Brachiosaurs, or simply explore the prehistoric jungle, your exclusive park pass awaits. Fill out the form below to book your personalized tour and unlock thrilling encounters with these ancient giants—just remember to stay on the path and keep your arms inside the vehicle at all times!</p>
+        <p>Fill out the form below to book your personalized tour and unlock thrilling encounters with these ancient giants—just remember to stay on the path and keep your arms inside the vehicle at all times!</p>
         <form id="form">
             <legend>Sign-Up</legend>
             <fieldset id="names">
@@ -34,6 +37,57 @@
                 <input type="password" id="password" required />
                 <label for="password-conf">Confirm Password:</label>
                 <input type="password" id="password-conf" required />
+            </fieldset>
+            <fieldset>
+                <label for="fave-dino">Favourite Dinosaur:</label>
+                <input type="text" id="fave-dino" name="fave-dinos" list="dinos" required />
+                <datalist id="dinos">
+                    <option>Tyrannosaurus Rex</option>
+                    <option>Velociraptor</option>
+                    <option>Triceratops</option>
+                    <option>Brachiosaurus</option>
+                    <option>Stegosaurus</option>
+                    <option>Spinosaurus</option>
+                    <option>Pterodactyl</option>
+                    <option>Ankylosaurus</option>
+                    <option>Allosaurus</option>
+                    <option>Diplodocus</option>
+                    <option>Iguanodon</option>
+                    <option>Parasaurolophus</option>
+                </datalist>
+                <label for="tour">Preferred Tour:</label>
+                <select id="tour" required>
+                    <option></option>
+                    <optgroup label="Rainforest">
+                        <option>Carnivore Feeding Frenzy</option>
+                        <option>Herbivore Safari Adventure</option>
+                        <option>Triassic Jungle Trek</option>
+                    </optgroup>
+                    <optgroup label="Scientific Center">
+                        <option>Pterosaur Aviary Flight Show</option>
+                        <option>Dino Hatchery & Nursery Visit</option>
+                    </optgroup>
+                    <optgroup label="Aquatic Research Lab">
+                        <option>Prehistoric River Rapids</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="vip">VIP Experience</label>
+                <ul id="vip">
+                    <li>
+                        <label for="baby-dino">Baby Dinosaur</label>
+                        <input type="radio" id="baby-dino" name="vip-ex" />
+                    </li>
+                    <li>
+                        <label for="tri-ride">Triceratops Ride</label>
+                        <input type="radio" id="tri-ride" name="vip-ex" />
+                    </li>
+                    <li>
+                        <label for="trex-feed">T-Rex Feeding Session</label>
+                        <input type="radio" id="trex-feed" name="vip-ex" />
+                    </li>
+                </ul>
             </fieldset>
             <input type="submit" value="Create Account">
         </form>
