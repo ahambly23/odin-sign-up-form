@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign-Up Form</title>
+    <title>Sign-Up Form - Triassic Park</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="left">
+        <div>
+            <p class="welcome">Welcome to</p>
+            <h1>Triassic Park</h1>
+        </div>
+    </div>
+    <div id="right">
+        <p>Get ready for the adventure of a lifetime as you step into a world where dinosaurs roam once again. Whether you're eager to meet a mighty T-Rex, ride alongside towering Brachiosaurs, or simply explore the prehistoric jungle, your exclusive park pass awaits. Fill out the form below to book your personalized tour and unlock thrilling encounters with these ancient giants—just remember to stay on the path and keep your arms inside the vehicle at all times!</p>
+        <form id="form">
+            <legend>Sign-Up</legend>
+            <fieldset id="names">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" required />
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" required />
+            </fieldset>
+            <fieldset id="tel-email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required />
+            </fieldset>
+            <fieldset id="passwords">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required />
+                <label for="password-conf">Confirm Password:</label>
+                <input type="password" id="password-conf" required />
+            </fieldset>
+            <input type="submit" value="Create Account">
+        </form>
+        <div>
+            <p>Already have an account?</p>
+            <a href="#">Log In</a>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
