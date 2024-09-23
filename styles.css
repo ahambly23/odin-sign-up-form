@@ -11,9 +11,52 @@ body {
 
 #left {
     background-image: url("assets/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
     flex: 1 1 40%;
+    border-right: 4px solid black;
+}
+
+.logo-cont {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 68px;
+    background-color: rgba(248, 211, 64, 1);
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 8px 8px 4px black;
+    transition: 0.2s ease;
+}
+
+.logo-cont:hover {
+    transform: rotate(-5deg) scale(1.2);
+}
+
+.welcome {
+    font-family: "Satisfy", cursive;
+    padding-top: 18px;
+    font-size: 48px;
+    color: rgb(234,13,13);
+    text-shadow: 2px 2px black;
+}
+
+.logo {
+    width: 250px;
+    opacity: 1;
+    padding-bottom: 18px;
+    transition: 0.2s ease;
 }
 
 #right {
     flex: 1 1 60%;
+    background: rgb(248, 211, 64);
+    color: black;
+}
+
+#right p {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    width: 700px;
+    padding: 24px;
 }
