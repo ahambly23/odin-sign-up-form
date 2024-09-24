@@ -52,14 +52,29 @@ body {
     flex: 1 1 60%;
     background: rgb(248, 211, 64);
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #right p {
-    margin: 0 auto;
     font-size: 18px;
     font-family: "Kanit", sans-serif;
     width: 700px;
     padding: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
 }
 
 input,
@@ -69,13 +84,76 @@ select {
     padding: 4px;
     font-size: 16px;
     border-radius: 6px;
+    margin: 4px 0px;
 }
 
 form,
 input::placeholder,
 input[type="text"],
 input[type="tel"],
+input[type="password"],
+input[type="email"],
 select {
     font-family: "Kanit", sans-serif;
     color: black;
+}
+
+input[type="email"],
+input[type="tel"], 
+#email-set,
+#tel-set {
+    width:  calc(100% - 10px);
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid rgb(248, 211, 64);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    color: rgb(248, 211, 64);
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+label {
+    color: rgb(248, 211, 64);
+}
+
+#sign-up-form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    transition: 0.5s ease;
+}
+
+#sign-up-form:hover {
+    transform: scale(1.05);
+}
+
+input[type="submit"] {
+    margin-top: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-family: "Kanit", sans-serif;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    transform: scale(1.1);
+}
+
+#log-in {
+    margin-top: -10px;
+}
+
+a {
+    color: black;
+    transition: 0.5s ease;
 }

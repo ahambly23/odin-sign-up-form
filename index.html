@@ -17,42 +17,24 @@
         </div>
     </div>
     <div id="right">
-        <p>Fill out the form below to enquire about a personalized tour and unlock thrilling encounters with these ancient giants—just remember to stay on the path and keep your arms inside the vehicle at all times!</p>
+        <p>Enter your details below and a member of our team will be in touch to enquire about a personalized tour to unlock thrilling encounters with these ancient giants.</p>
         <form id="sign-up-form">
             <legend>Sign-Up</legend>
             <fieldset id="names">
-                <input type="text" id="fname" placeholder="First Name" required />
-                <input type="text" id="lname" placeholder="Last Name" required />
+                <input type="text" id="fname" placeholder="First Name *" minlength="1" maxlength="15" required />
+                <input type="text" id="lname" placeholder="Last Name *" minlength="1" maxlength="15" required />
             </fieldset>
             <fieldset id="email-set">
-                <input type="email" id="email" placeholder="Email Address" required />
+                <input type="email" id="email" placeholder="Email Address *" required />
             </fieldset>
             <fieldset id="tel-set">
-                <input type="tel" id="phone" placeholder="Telephone Number" required />
+                <input type="tel" id="phone" placeholder="Telephone Number *" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required />
             </fieldset>
             <fieldset id="passwords">
-                <input type="password" id="password" placeholder="Password" required />
-                <input type="password" id="password-conf" placeholder="Confirm Password" required />
+                <input type="password" id="password" placeholder="Password *" required />
+                <input type="password" id="password-conf" placeholder="Confirm Password *" required />
             </fieldset>
-        </form>
-        <form id="fave-tour-vip">
-            <fieldset>
-                <label for="fave-dino">Favourite Dinosaur:</label>
-                <input type="text" id="fave-dino" name="fave-dinos" list="dinos" required />
-                <datalist id="dinos">
-                    <option>Tyrannosaurus Rex</option>
-                    <option>Velociraptor</option>
-                    <option>Triceratops</option>
-                    <option>Brachiosaurus</option>
-                    <option>Stegosaurus</option>
-                    <option>Spinosaurus</option>
-                    <option>Pterodactyl</option>
-                    <option>Ankylosaurus</option>
-                    <option>Allosaurus</option>
-                    <option>Diplodocus</option>
-                    <option>Iguanodon</option>
-                    <option>Parasaurolophus</option>
-                </datalist>
+            <fieldset id="tour-set">
                 <label for="tour">Preferred Tour:</label>
                 <select id="tour" required>
                     <option></option>
@@ -70,28 +52,10 @@
                     </optgroup>
                 </select>
             </fieldset>
-            <fieldset>
-                <label for="vip">VIP Experience</label>
-                <ul id="vip">
-                    <li>
-                        <label for="baby-dino">Baby Dinosaur</label>
-                        <input type="radio" id="baby-dino" name="vip-ex" />
-                    </li>
-                    <li>
-                        <label for="tri-ride">Triceratops Ride</label>
-                        <input type="radio" id="tri-ride" name="vip-ex" />
-                    </li>
-                    <li>
-                        <label for="trex-feed">T-Rex Feeding Session</label>
-                        <input type="radio" id="trex-feed" name="vip-ex" />
-                    </li>
-                </ul>
-            </fieldset>
             <input type="submit" value="Enquire">
         </form>
-        <div>
-            <p>Already have an account?</p>
-            <a href="#">Log In</a>
+        <div id="log-in">
+            <p><a href="#">Already have an account? Log in here</a></p>
         </div>
     </div>
     <script src="script.js"></script>
