@@ -17,27 +17,25 @@
         </div>
     </div>
     <div id="right">
-        <p>Fill out the form below to book your personalized tour and unlock thrilling encounters with these ancient giants—just remember to stay on the path and keep your arms inside the vehicle at all times!</p>
-        <form id="form">
+        <p>Fill out the form below to enquire about a personalized tour and unlock thrilling encounters with these ancient giants—just remember to stay on the path and keep your arms inside the vehicle at all times!</p>
+        <form id="sign-up-form">
             <legend>Sign-Up</legend>
             <fieldset id="names">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" required />
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" required />
+                <input type="text" id="fname" placeholder="First Name" required />
+                <input type="text" id="lname" placeholder="Last Name" required />
             </fieldset>
-            <fieldset id="tel-email">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required />
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" required />
+            <fieldset id="email-set">
+                <input type="email" id="email" placeholder="Email Address" required />
+            </fieldset>
+            <fieldset id="tel-set">
+                <input type="tel" id="phone" placeholder="Telephone Number" required />
             </fieldset>
             <fieldset id="passwords">
-                <label for="password">Password:</label>
-                <input type="password" id="password" required />
-                <label for="password-conf">Confirm Password:</label>
-                <input type="password" id="password-conf" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <input type="password" id="password-conf" placeholder="Confirm Password" required />
             </fieldset>
+        </form>
+        <form id="fave-tour-vip">
             <fieldset>
                 <label for="fave-dino">Favourite Dinosaur:</label>
                 <input type="text" id="fave-dino" name="fave-dinos" list="dinos" required />
@@ -89,7 +87,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <input type="submit" value="Create Account">
+            <input type="submit" value="Enquire">
         </form>
         <div>
             <p>Already have an account?</p>
