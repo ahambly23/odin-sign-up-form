@@ -105,9 +105,19 @@ input[type="tel"],
     width:  calc(100% - 10px);
 }
 
+input,
+select {
+    transition: 0.4s ease-in-out;
+}
+
 input:focus,
 select:focus {
     outline: 2px solid rgb(248, 211, 64);
+}
+
+input:focus:invalid,
+select:focus:invalid {
+    outline: 2px solid red;
 }
 
 fieldset {
